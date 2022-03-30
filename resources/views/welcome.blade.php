@@ -7,6 +7,7 @@
         <div class="col">
             <h1>Hola usando layouts</h1>
             <h2><i class="fa-solid fa-cannabis"></i></h2>
+            <a href="{{route('personas.create')}}">Agregar</a>
         </div>
     </div>
 @endsection
