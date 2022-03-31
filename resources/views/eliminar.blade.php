@@ -29,8 +29,8 @@
                         </table>
                         <hr>
                         <form action="">
-                            <a href="{{route('personas.index')}}" class="btn btn-outline-warning">Regresar</a>
-                            <button class="btn btn-outline-danger">Eliminar</button>
+                            <a href="{{route('personas.index')}}" class="btn btn-outline-warning"><i class="fa-solid fa-person-walking-arrow-loop-left me-2"></i>Regresar</a>
+                            <button class="btn btn-outline-danger"><i class="fa-solid fa-user-xmark me-2"></i>Eliminar</button>
                         </form>
                     </div>
                   </p>

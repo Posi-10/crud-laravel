@@ -10,7 +10,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-center">Listado de personas en el sistema</h5>
                   <p>
-                      <a href="{{route("personas.create")}}" class="btn btn-outline-info">Agregar nueva persona</a>
+                      <a href="{{route("personas.create")}}" class="btn btn-outline-info"><i class="fa-solid fa-user-plus me-2"></i>Agregar nueva persona</a>
                   </p>
                   <hr>
                   <p class="card-text">
@@ -31,8 +31,20 @@
                                             <th>{{$item->apellido_materno}}</th>
                                             <th>{{$item->nombre}}</th>
                                             <th>{{$item->fecha_nacimiento}}</th>
-                                            <th></th>
-                                            <th></th>
+                                            <th>
+                                                <form action="">
+                                                    <button class="btn btn-outline-warning btn-sm">
+                                                        <i class="fa-solid fa-user-pen"></i>
+                                                    </button>
+                                                </form>
+                                            </th>
+                                            <th>
+                                                <form action="">
+                                                    <button class="btn btn-outline-danger btn-sm">
+                                                        <i class="fa-solid fa-user-xmark"></i>
+                                                    </button>
+                                                </form>
+                                            </th>
                                         </tr>
                                     @endforeach
                               </tbody>

@@ -19,8 +19,8 @@
                           <label for="">Fecha de Nacimiento</label>
                           <input type="date" name="fecha_nacimiento" class="form-control" required>
                           <br>
-                          <a href="{{route('personas.index')}}" class="btn btn-outline-warning">Regresar</a>
-                          <button class="btn btn-outline-success">Agregar</button>
+                          <a href="{{route('personas.index')}}" class="btn btn-outline-warning"><i class="fa-solid fa-person-walking-arrow-loop-left me-2"></i>Regresar</a>
+                          <button class="btn btn-outline-success"><i class="fa-solid fa-user-plus me-2"></i>Agregar</button>
                       </form>
                   </p>
                 </div>
