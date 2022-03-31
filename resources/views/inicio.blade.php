@@ -8,7 +8,7 @@
             <div class="card">
                 <h5 class="card-header">CRUD con Laravel 8 y MySQL</h5>
                 <div class="card-body">
-                  <h5 class="card-title">Listado de personas en el sistema</h5>
+                  <h5 class="card-title text-center">Listado de personas en el sistema</h5>
                   <p>
                       <a href="{{route("personas.create")}}" class="btn btn-outline-info">Agregar nueva persona</a>
                   </p>
