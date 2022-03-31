@@ -30,12 +30,13 @@ class PersonasController extends Controller
     public function show(Personas $personas)
     {
         // Servira para obtener un refistro de nuestra tabla
+        return view('eliminar');
     }
 
     public function edit(Personas $personas)
     {
         // Este metodo nos sirve para traer los datos que se van a editar y los coloca en un formulario
-        return "Aquí se actualiza";
+        return view('actualizar');
     }
 
     public function update(Request $request, Personas $personas)

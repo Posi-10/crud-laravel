@@ -1,12 +1,12 @@
 @extends('layout/plantilla')
 
-@section('tituloPagina', 'Crear un nuevo registro')
+@section('tituloPagina', 'Actualizar registro')
 
 @section('contenido')
     <div class="row">
         <div class="col mt-5">
             <div class="card">
-                <h5 class="card-header">Agregar nueva persona</h5>
+                <h5 class="card-header">Actualizar persona</h5>
                 <div class="card-body">
                   <p class="card-text">
                       <form action="">
@@ -20,7 +20,7 @@
                           <input type="date" name="fecha_nacimiento" class="form-control" required>
                           <br>
                           <a href="{{route('personas.index')}}" class="btn btn-outline-warning">Regresar</a>
-                          <button class="btn btn-outline-success">Agregar</button>
+                          <button class="btn btn-outline-info">Actualizar</button>
                       </form>
                   </p>
                 </div>

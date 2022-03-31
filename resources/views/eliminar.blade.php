@@ -1,0 +1,41 @@
+@extends('layout/plantilla')
+
+@section('tituloPagina', 'Eliminar registro')
+
+@section('contenido')
+    <div class="row">
+        <div class="col mt-5">
+            <div class="card">
+                <h5 class="card-header">Eliminar una persona</h5>
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="alert alert-danger" role="alert">
+                        Estas seguro de eliminar este registro!!!
+                        <table class="table table-sm table-hover mt-2">
+                            <thead>
+                                <th>Apellido Paterno</th>
+                                <th>Apellido Materno</th>
+                                <th>Nombre</th>
+                                <th>Fecha de Nacimienro</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                        <form action="">
+                            <a href="{{route('personas.index')}}" class="btn btn-outline-warning">Regresar</a>
+                            <button class="btn btn-outline-danger">Eliminar</button>
+                        </form>
+                    </div>
+                  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
