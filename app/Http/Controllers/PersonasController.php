@@ -11,7 +11,7 @@ class PersonasController extends Controller
     public function index()
     {   
         // Pagina de inicio
-        $datos = Personas::all();
+        $datos = Personas::orderBy('apellido_paterno', 'asc')->paginate(4);
         return view('inicio', compact('datos'));
     }
 
