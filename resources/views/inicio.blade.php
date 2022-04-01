@@ -27,38 +27,38 @@
                   <p class="card-text">
                       <div class="table table-responsive">
                           <table class="table table-sm table-bordered">
-                              <thead>
-                                  <th>Apellido Paterno</th>
-                                  <th>Apellido Materno</th>
-                                  <th>Nombre</th>
-                                  <th>Fecha de Nacimiento</th>
-                                  <th>Editar</th>
-                                  <th>Eliminar</th>
-                              </thead>
-                              <tbody>
+                                <thead>
+                                    <th>Apellido Paterno</th>
+                                    <th>Apellido Materno</th>
+                                    <th>Nombre</th>
+                                    <th>Fecha de Nacimiento</th>
+                                    <th>Editar</th>
+                                    <th>Eliminar</th>
+                                </thead>
+                                <tbody>
                                     @foreach ($datos as $item)  
                                         <tr>
-                                            <th>{{$item->apellido_paterno}}</th>
-                                            <th>{{$item->apellido_materno}}</th>
-                                            <th>{{$item->nombre}}</th>
-                                            <th>{{$item->fecha_nacimiento}}</th>
-                                            <th>
-                                                <form action="">
+                                            <td>{{$item->apellido_paterno}}</td>
+                                            <td>{{$item->apellido_materno}}</td>
+                                            <td>{{$item->nombre}}</td>
+                                            <td>{{$item->fecha_nacimiento}}</td>
+                                            <td>
+                                                <form action="{{route('personas.edit', $item->id)}}" method="GET">
                                                     <button class="btn btn-outline-warning btn-sm">
                                                         <i class="fa-solid fa-user-pen"></i>
                                                     </button>
                                                 </form>
-                                            </th>
-                                            <th>
+                                            </td>
+                                            <td>
                                                 <form action="">
                                                     <button class="btn btn-outline-danger btn-sm">
                                                         <i class="fa-solid fa-user-xmark"></i>
                                                     </button>
                                                 </form>
-                                            </th>
+                                            </td>
                                         </tr>
                                     @endforeach
-                              </tbody>
+                                </tbody>
                           </table>
                       </div>
                   </p>
