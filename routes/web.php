@@ -9,8 +9,10 @@ Route::get('/create', [PersonasController::class, 'create'])->name('personas.cre
 
 Route::get('/edit/{id}', [PersonasController::class, 'edit'])->name('personas.edit');
 
-Route::get('/show', [PersonasController::class, 'show'])->name('personas.show');
+Route::get('/show/{id}', [PersonasController::class, 'show'])->name('personas.show');
 
 Route::post('/store', [PersonasController::class, 'store'])->name('personas.store');
 
 Route::put('/update/{id}', [PersonasController::class, 'update'])->name('personas.update');
+
+Route::delete('/destroy/{id}', [PersonasController::class, 'destroy'])->name('personas.destroy');

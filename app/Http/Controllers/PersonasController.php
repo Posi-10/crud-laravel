@@ -34,10 +34,11 @@ class PersonasController extends Controller
     }
 
 
-    public function show(Personas $personas)
+    public function show($id)
     {
         // Servira para obtener un refistro de nuestra tabla
-        return view('eliminar');
+        $personas = Personas::find($id); 
+        return view('eliminar', compact('personas'));
     }
 
     public function edit($id)
@@ -59,8 +60,11 @@ class PersonasController extends Controller
         return redirect()->route('personas.index')->with("success", "Actualizado con exito!");
     }
 
-    public function destroy(Personas $personas)
+    public function destroy($id)
     {
         // Elimina un registro 
+        $personas = Personas::find($id);
+        $personas->delete();
+        return redirect()->route('personas.index')->with("success", "Eliminado con exito!");
     }
 }

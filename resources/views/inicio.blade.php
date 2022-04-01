@@ -50,7 +50,7 @@
                                                 </form>
                                             </td>
                                             <td>
-                                                <form action="">
+                                                <form action="{{route('personas.show', $item->id)}}" method="GET">
                                                     <button class="btn btn-outline-danger btn-sm">
                                                         <i class="fa-solid fa-user-xmark"></i>
                                                     </button>
