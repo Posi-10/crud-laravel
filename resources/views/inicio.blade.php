@@ -8,6 +8,17 @@
             <div class="card">
                 <h5 class="card-header">CRUD con Laravel 8 y MySQL</h5>
                 <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                @if ($mensaje = Session::get('success'))
+                                    <div class="alert alert-success" role="alert">
+                                        {{$mensaje}}
+                                    </div>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
                   <h5 class="card-title text-center">Listado de personas en el sistema</h5>
                   <p>
                       <a href="{{route("personas.create")}}" class="btn btn-outline-info"><i class="fa-solid fa-user-plus me-2"></i>Agregar nueva persona</a>

@@ -10,3 +10,5 @@ Route::get('/create', [PersonasController::class, 'create'])->name('personas.cre
 Route::get('/edit', [PersonasController::class, 'edit'])->name('personas.edit');
 
 Route::get('/show', [PersonasController::class, 'show'])->name('personas.show');
+
+Route::post('/store', [PersonasController::class, 'store'])->name('personas.store');
